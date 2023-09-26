@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang=" pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maior ou menor?</title>
+</head>
+
+<body>
+
+<h3> Descubra qual número é maior e qual é menor:</h3>
+
+<div id = "numero1"></div>
+<div id = "numero2"></div>
+<div id = "maior"></div>
+<div id = "menor"></div>
+
+<script>
+
+let numero1 = Number (prompt ("Digite um número:"));
+let numero2 = Number (prompt ("Digite outro número:"));
+
+let menor = Math.min(numero1, numero2);
+let maior = Math.max(numero1, numero2);
+
+document.getElementById("maior").innerHTML = "O número maior é: " + maior;
+document.getElementById("menor").innerHTML = "O número menor é: " + menor;
+
+
+</script>
+</body>
+
+</html>

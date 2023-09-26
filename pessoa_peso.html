@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang=" pt-br">
+<head>
+<title>Compare o peso:</title>
+</head>
+<body>
+
+<h4> Compare os pesos:</h4>
+
+<div id = "nome1"> </div>
+<div id = "peso1"> </div>
+<div id = "nome2"> </div>
+<div id = "peso2"> </div>
+<div id = "maiorpeso"> </div>
+
+
+<script>
+
+let nome1 = prompt ("Digite o nome e o peso de duas pessoas e descubra quem pesa mais - Digite o nome da primeira pessoa:");
+let peso1 = Number (prompt ("- Digite o peso da primeira pessoa:"));
+let nome2 = prompt ("- Digite o nome da segunda pessoa:");
+let peso2 = Number (prompt ("- Digite o peso da segunda pessoa:"));
+
+let maiorpeso;
+
+if (peso1>peso2) {
+    maiorpeso = nome1
+}
+else if(peso1<peso2) {
+    maiorpeso = nome2
+} else {
+    maiorpeso = "As duas pessoas possuem o mesmo peso";
+} 
+
+document.getElementById("nome1").innerHTML = "Primeira pessoa: " + nome1;
+document.getElementById("peso1").innerHTML = "Peso da primeira pessoa: " + peso1;
+document.getElementById("nome2").innerHTML = "Segunda pessoa: " + nome2;
+document.getElementById("peso2").innerHTML = "Peso da segunda pessoa: " + peso2;
+document.getElementById("maiorpeso").innerHTML = "A pessoa com o maior peso é: " + maiorpeso;
+
+</script>
+</body>
+</html>
